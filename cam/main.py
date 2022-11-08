@@ -1,9 +1,8 @@
 import time
 from img_drboost import ImageDynamicRangeBooster
 from setup import *
-from PIL import Image
 from img_stacker import ImageStacker
-from img_sharpner import ImageSharpener
+from helpers import save_image
 
 total_image = 5
 size = 50
@@ -15,8 +14,7 @@ camera.resolution = (32 * size, 16 * size)
 camera.framerate_range = (0.0167, 60)
 time.sleep(5)
 
-output = ImageDynamicRangeBooster(camera, ImageStacker(camera, total_image).get_output()).get_output()
-
-img = Image.fromarray(output, 'RGB')
-img.save('final.png')
+# output = ImageDynamicRangeBooster(camera, ImageStacker(camera, total_image).get_output()).get_output()
+output = camera.capture()
+save_image(output, "output.jpg")
 print("done")

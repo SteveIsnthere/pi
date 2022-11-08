@@ -1,5 +1,5 @@
 from image_processor import ImageProcessor
-from img_sharpner import ImageSharpener
+from helpers import sharpen_image
 
 
 class ImageStacker(ImageProcessor):
@@ -23,4 +23,4 @@ class ImageStacker(ImageProcessor):
 
         output = output.astype('uint8')
 
-        return ImageSharpener(self.cam, output).get_output()
+        return sharpen_image(output)
