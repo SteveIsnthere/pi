@@ -3,8 +3,9 @@ from img_drboost import ImageDynamicRangeBooster
 from setup import *
 from PIL import Image
 from img_stacker import ImageStacker
+from img_sharpner import ImageSharpener
 
-total_image = 5
+total_image = 50
 size = 50
 
 camera.exposure_mode = 'night'
@@ -16,6 +17,6 @@ time.sleep(5)
 
 output = ImageDynamicRangeBooster(camera, ImageStacker(camera, total_image).get_output()).get_output()
 
-img = Image.fromarray(output, 'RGB')
+img = Image.fromarray(ImageSharpener(camera, output).get_output(), 'RGB')
 img.save('final.png')
 print("done")

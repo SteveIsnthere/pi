@@ -18,7 +18,7 @@ class ImageStacker(ImageProcessor):
             new_img_portion = 1 - image_taken / self.stack_size
             output = output * (1 - new_img_portion) + new_img * new_img_portion
             image_taken += 1
-            print(str(image_taken / self.stack_size * 100) + "%")
+            print(str(round(image_taken / self.stack_size * 100)) + "%")
 
         return output.astype('uint8')
 

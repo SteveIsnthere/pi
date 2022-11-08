@@ -12,6 +12,7 @@ class ImageDynamicRangeBooster(ImageProcessor):
         self.input_image = input_image
 
     def get_overexpose_image(self):
+        print("Getting overexpose image")
         dimmest_pixel = 0
         self.cam.shutter_speed = 100000
         overexpose_img = self.generate_image_array(self.img_width, self.img_height)
@@ -25,6 +26,7 @@ class ImageDynamicRangeBooster(ImageProcessor):
         return ImageStacker(self.cam, 3).get_output()
 
     def get_underexpose_image(self):
+        print("Getting underexpose image")
         brightest_pixel = 255
         underexpose_img = self.generate_image_array(self.img_width, self.img_height)
         self.cam.shutter_speed = 150000
@@ -38,10 +40,11 @@ class ImageDynamicRangeBooster(ImageProcessor):
 
     @staticmethod
     def get_out_of_expose_pixels(image):
+        print("Finding out of exposure pixels")
         underexpose_pixels = []
         overexpose_pixels = []
         for row in range(len(image)):
-            print(str(row / len(image) * 100) + "%")
+            print(str(round(row / len(image) * 100)) + "%")
             for col in range(len(image[row])):
                 average = np.mean(image[row][col])
                 if average > 235:

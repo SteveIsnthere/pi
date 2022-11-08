@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1642e70-b125-44f0-be5b-042f78f3c48e" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/cam/img_sharpner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam/img_drboost.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/img_drboost.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cam/img_stacker.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/img_stacker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +27,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2H9CKJeiz0v0vIjbqPVtyuKZ6fG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -80,7 +86,7 @@
       <workItem from="1667719449940" duration="216000" />
       <workItem from="1667720848348" duration="612000" />
       <workItem from="1667816719759" duration="6303000" />
-      <workItem from="1667892431293" duration="3658000" />
+      <workItem from="1667892431293" duration="4764000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1667901627928</created>
@@ -96,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667901727292</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix">
+      <created>1667901841460</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667901841460</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix">
+      <created>1667901985801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667901985801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
