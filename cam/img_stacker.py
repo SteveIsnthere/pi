@@ -1,4 +1,5 @@
 from image_processor import ImageProcessor
+from img_sharpner import ImageSharpener
 
 
 class ImageStacker(ImageProcessor):
@@ -20,6 +21,6 @@ class ImageStacker(ImageProcessor):
             image_taken += 1
             print(str(round(image_taken / self.stack_size * 100)) + "%")
 
-        return output.astype('uint8')
+        output = output.astype('uint8')
 
-
+        return ImageSharpener(self.cam, output).get_output()

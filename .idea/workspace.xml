@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b1642e70-b125-44f0-be5b-042f78f3c48e" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cam/img_sharpner.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/img_sharpner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam/img_stacker.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/img_stacker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <workItem from="1667720848348" duration="612000" />
       <workItem from="1667816719759" duration="6303000" />
       <workItem from="1667892431293" duration="5034000" />
-      <workItem from="1667931350999" duration="757000" />
+      <workItem from="1667931350999" duration="1701000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1667901627928</created>
@@ -121,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667903117319</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix">
+      <created>1667933005119</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667933005119</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

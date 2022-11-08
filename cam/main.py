@@ -17,6 +17,6 @@ time.sleep(5)
 
 output = ImageDynamicRangeBooster(camera, ImageStacker(camera, total_image).get_output()).get_output()
 
-img = Image.fromarray(ImageSharpener(camera, output).get_output(), 'RGB')
+img = Image.fromarray(output, 'RGB')
 img.save('final.png')
 print("done")
