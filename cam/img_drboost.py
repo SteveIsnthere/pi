@@ -2,7 +2,7 @@ from image_processor import ImageProcessor
 import time
 import numpy as np
 
-from cam.img_stacker import ImageStacker
+from img_stacker import ImageStacker
 
 
 class ImageDynamicRangeBooster(ImageProcessor):
