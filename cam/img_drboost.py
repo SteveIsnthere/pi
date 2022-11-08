@@ -1,4 +1,4 @@
-from cam.image_processor import ImageProcessor
+from image_processor import ImageProcessor
 import time
 import numpy as np
 

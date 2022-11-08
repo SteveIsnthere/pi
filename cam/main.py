@@ -1,5 +1,5 @@
 import time
-from cam.img_drboost import ImageDynamicRangeBooster
+from img_drboost import ImageDynamicRangeBooster
 from setup import *
 from PIL import Image
 from img_stacker import ImageStacker
