@@ -11,7 +11,7 @@ class ImageStacker(ImageProcessor):
 
         image_taken = 0
         while image_taken < self.stack_size:
-            new_img = self.generate_image_array(self.img_height, self.img_width)
+            new_img = self.generate_image_array(self.img_width, self.img_height)
             self.cam.capture(new_img, 'rgb')
             new_img.astype('float64')
             new_img_portion = 1 - image_taken / self.stack_size
