@@ -7,6 +7,7 @@ class ImageStacker(ImageProcessor):
         self.stack_size = stack_size
 
     def get_output(self):
+        print("Stacking " + str(self.stack_size) + " images")
         output = self.generate_float_image_array(self.img_width, self.img_height)
 
         image_taken = 0
