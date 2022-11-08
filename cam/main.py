@@ -15,6 +15,6 @@ camera.framerate_range = (0.0167, 60)
 time.sleep(5)
 
 # output = ImageDynamicRangeBooster(camera, ImageStacker(camera, total_image).get_output()).get_output()
-output = camera.capture()
+output = ImageStacker(camera, 1).get_output()
 save_image(output, "output.jpg")
 print("done")
