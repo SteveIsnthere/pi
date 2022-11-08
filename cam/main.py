@@ -5,7 +5,7 @@ from PIL import Image
 from img_stacker import ImageStacker
 from img_sharpner import ImageSharpener
 
-total_image = 50
+total_image = 5
 size = 50
 
 camera.exposure_mode = 'night'
