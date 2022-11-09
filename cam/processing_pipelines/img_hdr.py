@@ -20,7 +20,7 @@ class ImageHDR(ImageProcessor):
             time.sleep(1)
             overexpose_img = ImageStacker(self.cam, 3).get_output()
             self.img_arr.append(overexpose_img)
-            self.shutter_speeds_arr.append(self.cam.shutter_speed)
+            self.shutter_speeds_arr.append(self.cam.shutter_speed/1000000)
             dimmest_pixel = np.min(overexpose_img)
             if self.cam.shutter_speed >= 10000000 or np.mean(overexpose_img) > 200:
                 break
@@ -33,18 +33,18 @@ class ImageHDR(ImageProcessor):
             underexpose_img = ImageStacker(self.cam, 3).get_output()
             brightest_pixel = np.max(underexpose_img)
             self.img_arr.append(underexpose_img)
-            self.shutter_speeds_arr.append(self.cam.shutter_speed)
+            self.shutter_speeds_arr.append(self.cam.shutter_speed/1000000)
             if self.cam.shutter_speed <= 1000 or np.mean(underexpose_img) < 25:
                 break
 
     def get_output(self):
-        shutter_speed = self.cam.shutter_speed
         base_image = ImageStacker(self.cam, 5).get_output()
         self.img_arr.append(base_image)
-        self.shutter_speeds_arr.append(shutter_speed)
+        self.shutter_speeds_arr.append(self.cam.shutter_speed/1000000)
         self.get_underexpose_image()
         self.get_overexpose_image()
-        self.shutter_speeds_arr = np.array(self.shutter_speeds_arr, dtype=np.float64)/1000
+        self.shutter_speeds_arr = np.array(self.shutter_speeds_arr, dtype=np.float64)
+        print(self.shutter_speeds_arr)
         # Merge exposures to HDR image
         merge_debevec = cv2.createMergeDebevec()
         hdr_debevec = merge_debevec.process(self.img_arr, times=self.shutter_speeds_arr.copy())
