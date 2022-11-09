@@ -12,3 +12,5 @@ def sharpen_image(input_img):
 
 def save_image(img, name):
     cv2.imwrite(name, img)
+
+
