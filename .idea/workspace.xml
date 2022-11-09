@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1642e70-b125-44f0-be5b-042f78f3c48e" name="Changes" comment="fix">
+    <list default="true" id="b1642e70-b125-44f0-be5b-042f78f3c48e" name="Changes" comment="added cv2 hdr">
       <change afterPath="$PROJECT_DIR$/cam/modes.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cam/processing_pipelines/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cam/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/processing_pipelines/helpers.py" afterDir="false" />
@@ -32,21 +32,22 @@
   </component>
   <component name="ProjectId" id="2H9CKJeiz0v0vIjbqPVtyuKZ6fG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/stevewang/PycharmProjects/pi/cam"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/stevewang/PycharmProjects/pi/cam&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cam" />
