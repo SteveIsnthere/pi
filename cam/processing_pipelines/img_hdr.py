@@ -44,6 +44,7 @@ class ImageHDR(ImageProcessor):
         self.get_underexpose_image()
         self.get_overexpose_image()
         self.shutter_speeds_arr = np.array(self.shutter_speeds_arr, dtype=np.float64)
+        self.img_arr = np.array(self.img_arr, dtype=np.float64)
         print(self.shutter_speeds_arr)
         # Merge exposures to HDR image
         merge_debevec = cv2.createMergeDebevec()
