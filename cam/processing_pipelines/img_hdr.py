@@ -1,5 +1,5 @@
-from img_stacker import ImageStacker
-from image_processor import ImageProcessor
+from cam.processing_pipelines.img_stacker import ImageStacker
+from cam.processing_pipelines.image_processor import ImageProcessor
 import numpy as np
 import time
 import cv2

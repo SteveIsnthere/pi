@@ -1,8 +1,7 @@
-from image_processor import ImageProcessor
+from cam.processing_pipelines.image_processor import ImageProcessor
+from cam.processing_pipelines.img_stacker import ImageStacker
 import time
 import numpy as np
-
-from img_stacker import ImageStacker
 
 
 class ImageDynamicRangeBooster(ImageProcessor):
