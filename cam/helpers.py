@@ -16,5 +16,5 @@ def sharpen_image(input_img):
 
 def save_image(image, path, jpg_quality=90):
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    image = cv2.flip(image, 0)
+    image = cv2.flip(image, -1)
     cv2.imwrite(path, image, [int(cv2.IMWRITE_JPEG_QUALITY), jpg_quality])
