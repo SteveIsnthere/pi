@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1642e70-b125-44f0-be5b-042f78f3c48e" name="Changes" comment="added cv2 hdr">
-      <change beforePath="$PROJECT_DIR$/cam/processing_pipelines/img_hdr.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/processing_pipelines/img_hdr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam/modes.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/modes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam/processing_pipelines/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam/processing_pipelines/img_stacker.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/processing_pipelines/img_stacker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cam/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/cam/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,7 @@
       <recent name="$PROJECT_DIR$/cam" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cam" />
       <recent name="$PROJECT_DIR$/cam/processing_pipelines" />
     </key>
   </component>
@@ -92,7 +98,8 @@
       <workItem from="1667931350999" duration="7931000" />
       <workItem from="1667953006477" duration="1886000" />
       <workItem from="1667958617776" duration="1767000" />
-      <workItem from="1667979312060" duration="4806000" />
+      <workItem from="1667979312060" duration="6075000" />
+      <workItem from="1668148729170" duration="1042000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1667901627928</created>
@@ -185,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667986483810</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added cv2 hdr">
+      <created>1667987304521</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667987304521</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

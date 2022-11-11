@@ -1,5 +1,5 @@
 from cam.processing_pipelines.image_processor import ImageProcessor
-from cam.processing_pipelines.helpers import sharpen_image
+from cam.helpers import sharpen_image
 
 
 class ImageStacker(ImageProcessor):

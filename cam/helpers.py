@@ -10,7 +10,9 @@ def sharpen_image(input_img):
     return sharped_img
 
 
-def save_image(img, name):
-    cv2.imwrite(name, img)
+# def save_image(img, name):
+#     cv2.imwrite(name, img)
 
 
+def save_image(image, path, jpg_quality=90):
+    cv2.imwrite(path, image, [int(cv2.IMWRITE_JPEG_QUALITY), jpg_quality])
