@@ -61,7 +61,7 @@ class ImageDynamicRangeBooster(ImageProcessor):
                 if [x - 1, y + 1] in li:
                     neighbours += 1
 
-                if neighbours > 4:
+                if neighbours > 2:
                     return True
                 else:
                     return False
@@ -71,6 +71,7 @@ class ImageDynamicRangeBooster(ImageProcessor):
                 x = pixel[0]
                 y = pixel[1]
                 if is_lone_pixel(x, y, pixel_list):
+                    print("progress: " + str(pixel_list.index(pixel) / len(pixel_list) * 100) + "%")
                     pixel_list.remove(pixel)
 
             return pixel_list
