@@ -88,7 +88,8 @@ class ImageDynamicRangeBooster(ImageProcessor):
                 if average < 14:
                     underexpose_pixels.append([row, col])
 
-        return remove_lone_pixels(underexpose_pixels), remove_lone_pixels(overexpose_pixels)
+        # return remove_lone_pixels(underexpose_pixels), remove_lone_pixels(overexpose_pixels)
+        return underexpose_pixels, overexpose_pixels
 
     def get_output(self):
         overexpose_img = self.get_overexpose_image()
