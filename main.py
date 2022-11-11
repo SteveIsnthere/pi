@@ -3,5 +3,8 @@ import requests
 
 url = "https://tsnode.stevethespacefa.repl.co"
 
-update_image()
-requests.post(url, "hi")
+# update_image()
+
+dummy = {'somekey': 'somevalue'}
+
+requests.post(url, json=dummy)
