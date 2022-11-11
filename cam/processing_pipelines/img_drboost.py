@@ -39,6 +39,42 @@ class ImageDynamicRangeBooster(ImageProcessor):
 
     @staticmethod
     def get_out_of_expose_pixels(image):
+
+        def remove_lone_pixels(pixel_list):
+
+            def is_lone_pixel(x, y, li):
+                neighbours = 0
+                if [x + 1, y] in li:
+                    neighbours += 1
+                if [x - 1, y] in li:
+                    neighbours += 1
+                if [x, y + 1] in li:
+                    neighbours += 1
+                if [x, y - 1] in li:
+                    neighbours += 1
+                if [x + 1, y + 1] in li:
+                    neighbours += 1
+                if [x - 1, y - 1] in li:
+                    neighbours += 1
+                if [x + 1, y - 1] in li:
+                    neighbours += 1
+                if [x - 1, y + 1] in li:
+                    neighbours += 1
+
+                if neighbours > 4:
+                    return True
+                else:
+                    return False
+
+            print("Removing lone pixels")
+            for pixel in pixel_list:
+                x = pixel[0]
+                y = pixel[1]
+                if is_lone_pixel(x, y, pixel_list):
+                    pixel_list.remove(pixel)
+
+            return pixel_list
+
         print("Finding out of exposure pixels")
         underexpose_pixels = []
         overexpose_pixels = []
@@ -51,7 +87,7 @@ class ImageDynamicRangeBooster(ImageProcessor):
                 if average < 14:
                     underexpose_pixels.append([row, col])
 
-        return underexpose_pixels, overexpose_pixels
+        return remove_lone_pixels(underexpose_pixels), remove_lone_pixels(overexpose_pixels)
 
     def get_output(self):
         overexpose_img = self.get_overexpose_image()
