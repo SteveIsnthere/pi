@@ -22,4 +22,4 @@ def get_highest_quality_image():
 
 
 def update_image():
-    save_image(get_highest_quality_image(), saving_path, 50)
+    save_image(get_highest_quality_image(), saving_path, 100)
